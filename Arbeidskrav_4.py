@@ -85,7 +85,7 @@ for k in range(0, N_sim):
     f_out_k = u_k
     
     # Hight Time-derivative:
-    dh_dt_k = ((f_in_k/A))*(f_in_k - f_out_k)
+    dh_dt_k = (f_in_k - f_out_k)/A
     
     # State updates using the Euler method:
     h_kp1 = h_k + dh_dt_k*t_step
